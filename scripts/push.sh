@@ -10,7 +10,7 @@ cd ..
 rm -rf ./dotfiles-old/dotfiles/dotfiles-old
 cp -r ./* ./dotfiles-old/dotfiles
 cd dotfiles-old/dotfiles
-# rm -rf dotfiles-old
+rm -rf dotfiles-old
 
 # git init
 git add .
