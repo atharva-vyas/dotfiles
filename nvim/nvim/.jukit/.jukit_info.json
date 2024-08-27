@@ -1,0 +1,1 @@
+{"cmd": "\nprint(\"hi\")\n", "import_complete": 1, "terminal": "nvimterm", "output_complete": 1, "cmd_opts": " --cell_id=9cVHIRWVfc -s", "outhist_cell": "9cVHIRWVfc", "is_md": 0}

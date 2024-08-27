@@ -1,0 +1,3 @@
+return {
+	"deresmos/nvim-term"
+}
