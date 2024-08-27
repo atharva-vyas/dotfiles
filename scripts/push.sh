@@ -12,7 +12,7 @@ cp -r ./* ./dotfiles-old/dotfiles
 cd dotfiles-old/dotfiles
 rm -rf dotfiles-old
 
-git init
+# git init
 git add .
 currentEpochTime=$(date +%s)
 git commit -m "${currentEpochTime}"
