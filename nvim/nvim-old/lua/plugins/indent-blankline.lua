@@ -10,29 +10,13 @@ return {
 	config = function()
 		-- require("ibl").setup()
 
-		-- *ibl.overwrite()*
-		-- require("ibl").overwrite {
-		-- 	exclude = { filetypes = {"dashboard"} }
-		-- }
-		-- require("ibl").overwrite({
-		-- 	exclude = { filetypes = { "dashboard" } }
-		-- })
-
-		-- require("ibl").setup({
-		-- 	exclude = {
-		-- 		-- filetypes = { "dashboard" },
-		-- 		buftypes = { "dashboard" },
-		-- 	}
-		-- })
-
 		-- Shows an underline on the first line of the scope
 		require("ibl").setup({
 			scope = {
 				show_start = false
 			},
 			exclude = {
-				-- filetypes = { "dashboard" },
-				buftypes = { "dashboard" },
+				filetypes = { "dashboard" },
 			},
 		})
 	end
