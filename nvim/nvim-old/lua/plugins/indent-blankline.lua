@@ -13,7 +13,10 @@ return {
 		-- Shows an underline on the first line of the scope
 		require("ibl").setup({
 			scope = {
-				show_start = false
+				show_start = true,
+				show_end = true,
+				show_exact_scope = true,
+				highlight = { "Function", "Label" },
 			},
 			exclude = {
 				filetypes = { "dashboard" },
