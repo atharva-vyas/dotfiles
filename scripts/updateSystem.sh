@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ..
 
-cp -r ./nvim/nvim ~/.config/nvim/
+cp -r ./nvim/nvim ~/.config
 cp ./tmux/tmux.conf ~/.tmux.conf
