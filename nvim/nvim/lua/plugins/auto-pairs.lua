@@ -1,3 +1,5 @@
+-- <M> = [alt-key]
+--
 -- input: (|){["foo"]} (press <M-}> at |)
 -- output: ({["foo"]}|)
 --
