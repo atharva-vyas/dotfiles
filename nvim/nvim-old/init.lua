@@ -5,8 +5,11 @@ vim.cmd.set "cursorline"
 vim.cmd.set "shiftwidth=4"
 vim.cmd.set "tabstop=4"
 
--- vim.cmd.nmap "j <Plug>(accelerated_jk_gj)"
--- vim.cmd.nmap "k <Plug>(accelerated_jk_gk)"
+
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.statuscolumn = "%s%=%{v:lnum} %=%{v:relnum?v:relnum:' '}  "
+
 
 -- share clip board between yank and system
 vim.opt.clipboard = "unnamedplus"
@@ -15,7 +18,6 @@ vim.g.jukit_mappings = 0
 -- uses nvterm for jukit output
 vim.g.jukit_terminal = "nvimterm"
 -- vim.g.jukit_mappings_ext_enabled = {"py", "ipynb"}
-
 
 
 -- Bootstrap lazy.nvim
