@@ -17,6 +17,7 @@ docker exec -it <image_name> /bin/sh
 docker stop <image_name>
 docker start <image_name>
 
+use --privileged to run the image as a privileged
 docker stats
 
 docker image
