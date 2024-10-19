@@ -1,6 +1,9 @@
-https://github.com/craftzdog/dotfiles-public?tab=readme-ov-file
-
-
+DONE
 https://github.com/numToStr/Comment.nvim
+
+IN-WORKS
 https://github.com/kevinhwang91/nvim-ufo
-https://github.com/tadmccorkle/markdown.nvim
+
+OPEN
+https://github.com/craftzdog/dotfiles-public?tab=readme-ov-file
+https://github.com/OXY2DEV/markview.nvim

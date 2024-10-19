@@ -6,6 +6,18 @@ vim.cmd.set "shiftwidth=4"
 vim.cmd.set "tabstop=4"
 
 
+-- Change working directory to current buffer
+vim.keymap.set('n', '<leader>cwd',
+	function()
+		local buffer_path = vim.api.nvim_buf_get_name(0)
+		local buffer_dir = vim.fn.fnamemodify(buffer_path, ':h')
+		vim.cmd('cd ' .. buffer_dir)
+		print("Changed directory to: " .. buffer_dir)
+	end
+)
+
+
+-- show absolute and relative line number
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.statuscolumn = "%s%=%{v:lnum} %=%{v:relnum?v:relnum:' '}  "
