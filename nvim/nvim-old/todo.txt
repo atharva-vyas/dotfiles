@@ -14,7 +14,9 @@ https://github.com/OXY2DEV/markview.nvim
 - seamless tmux/nvim navigation and resize
 - code snippets (code block)
 - :nohl to esc
-- nvim fix yank when deleting and pressing x
+- fix yank when deleting and pressing x
+- search the highlited word
+- jsx snippets
 
 - tmux better visual mode (like line numbers, clear indication that you are in vi mode)
 - tmux exit without having to yank
