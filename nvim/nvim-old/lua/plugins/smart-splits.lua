@@ -1,6 +1,58 @@
 return {
 	'mrjones2014/smart-splits.nvim',
 	config = function()
+		-- Define a global variable to store the direction
+		_G.smart_splits_direction = nil
+
+		-- Function to display the current direction
+		function HelloWorld()
+			-- if _G.smart_splits_direction then
+			-- 	print("Current direction: " .. _G.smart_splits_direction)
+			-- else
+			-- 	print("No direction set yet!")
+			-- end
+			--
+			--
+			--
+			-- if _G.smart_splits_direction == "left" then
+			-- 	print("left")
+			-- elseif _G.smart_splits_direction == "right" then
+			-- 	print("right")
+			-- elseif _G.smart_splits_direction == "up" then
+			-- 	print("up")
+			-- elseif _G.smart_splits_direction == "down" then
+			-- 	print("down")
+			-- else
+			-- 	print("No direction set yet!")
+			-- end
+		end
+
+		-- Bind <leader>hw to the HelloWorld function
+		vim.keymap.set('n', '<leader>hw', HelloWorld, { desc = 'Display current split direction' })
+
+		require('smart-splits').setup({
+			at_edge = function(ctx)
+				print(ctx.direction)
+			end,
+		})
+
+
+		-- local function send_tmux_command(cmd)
+		-- 	local is_tmux = os.getenv("TMUX") ~= nil
+		-- 	if is_tmux then
+		-- 		cmd = cmd:gsub("'", "'\\''")
+		-- 		os.execute(string.format("tmux %s", cmd))
+		-- 	else
+		-- 		print("Not running inside Tmux")
+		-- 	end
+		-- end
+		--
+		-- -- Example usage
+		-- vim.api.nvim_create_user_command('TmuxCmd', function(opts)
+		-- 	send_tmux_command(opts.args)
+		-- end, { nargs = '+' })
+
+
 		-- recommended mappings
 		-- resizing splits
 		-- these keymaps will also accept a range,
