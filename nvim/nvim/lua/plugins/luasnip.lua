@@ -19,6 +19,7 @@ return {
 		-- https://github.com/rafamadriz/friendly-snippets/tree/main/snippets
 		require("luasnip.loaders.from_vscode").lazy_load()
 		ls.filetype_extend("javascript", { "react", "javascript" })
+		ls.filetype_extend("java", { "java" })
 
 
 
