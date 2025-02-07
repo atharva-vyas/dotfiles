@@ -144,16 +144,6 @@ pyenv virtualenv-delete <name_of_your_env>
 pyenv versions
 ```
 
-## Adds "open tilix here" to nautilus:
-[GitHub Issue Comment](https://github.com/gnunn1/tilix/issues/1529#issuecomment-626020256)
-
-Just use:
-```
-sudo apt install python3-nautilus
-killall nautilus
-```
-and reopen nautilus, then right click to see the option.
-
 [How to keep EC2 instance running after SSH is terminated](https://dev.to/akhileshthite/how-to-keep-ec2-instance-running-after-ssh-is-terminated-45k8)
 
 ## Test API GET and POST requests:
