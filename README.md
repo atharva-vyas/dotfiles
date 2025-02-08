@@ -144,7 +144,9 @@ pyenv virtualenv-delete <name_of_your_env>
 pyenv versions
 ```
 
+## How to keep EC2 instance running after SSH is terminated:
 [How to keep EC2 instance running after SSH is terminated](https://dev.to/akhileshthite/how-to-keep-ec2-instance-running-after-ssh-is-terminated-45k8)
+
 
 ## Test API GET and POST requests:
 https://httpbin.org/get
