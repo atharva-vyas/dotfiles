@@ -5,7 +5,6 @@ vim.cmd.set "cursorline"
 vim.cmd.set "shiftwidth=4"
 vim.cmd.set "tabstop=4"
 
-vim.keymap.set("n", "<Esc>", ":nohl<CR>", { silent = true })
 
 -- Change working directory to current buffer
 vim.keymap.set('n', '<leader>cwd',
