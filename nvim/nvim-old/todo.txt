@@ -7,3 +7,17 @@ https://github.com/kevinhwang91/nvim-ufo
 OPEN
 https://github.com/craftzdog/dotfiles-public?tab=readme-ov-file
 https://github.com/OXY2DEV/markview.nvim
+
+
+
+- cheatsheet for all commands and plugins
+- seamless tmux/nvim navigation and resize
+- code snippets (code block)
+- :nohl to esc
+- fix yank when deleting and pressing x
+- search the highlited word
+- jsx snippets
+
+- tmux better visual mode (like line numbers, clear indication that you are in vi mode)
+- tmux exit without having to yank
+

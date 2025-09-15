@@ -50,16 +50,16 @@ return {
 				}),
 
 				sources = cmp.config.sources({
-					{ name = 'nvim_lsp' },
-					{ name = 'luasnip' },
-					{ name = 'buffer' },
-					{ name = 'path' },
+					{ name = 'luasnip',  priority = 1000 }, -- Prioritize LuaSnip
+					{ name = 'nvim_lsp', priority = 800 },
+					{ name = 'buffer',   priority = 500 },
+					{ name = 'path',     priority = 300 },
 				}),
 				snippet = {
 					expand = function(args)
 						require('luasnip').lsp_expand(args.body)
-					end,
-				},
+					end
+				}
 			})
 		end
 	},
@@ -92,8 +92,6 @@ return {
 				-- ensure_installed = { "lua_ls", "pyright" },
 				ensure_installed = { "lua_ls", "pyright", "cssls", "emmet_ls", "eslint", "html", "jsonls" },
 				handlers = {
-
-
 					-- this first function is the "default handler"
 					-- it applies to every language server without a "custom handler"
 					function(server_name)

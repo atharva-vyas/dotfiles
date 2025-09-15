@@ -1,3 +1,11 @@
+# REQUIREMENTS
+**zsh**
+```bash
+https://github.com/ohmyzsh/ohmyzsh
+```
+
+
+
 # Docker Commands and Utilities
 
 ```
