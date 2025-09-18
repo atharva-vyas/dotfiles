@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 cd ..
 
 cp -r {$PWD}/nvim/nvim ~/.config
